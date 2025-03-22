@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
+    "baseUrl": ".", // Esta línea es crucial
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"] // Define el alias @/ para la carpeta src
     }
   }
 }
