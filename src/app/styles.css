@@ -1,0 +1,9 @@
+.knob-hidden .p-knob-text {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .knob-hidden:hover .p-knob-text {
+    opacity: 1;
+  }
+  

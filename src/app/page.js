@@ -1,8 +1,13 @@
 "use client";
 
+import './styles.css';
+
 import { useState } from "react";
 import { Knob } from "primereact/knob";
 import { Button } from "primereact/button";
+const imagePath = "/Logo.png";
+
+
 
 export default function PluginInterface() {
   const [knobs, setKnobs] = useState({
@@ -77,17 +82,19 @@ export default function PluginInterface() {
 
       {/* Sección 1/3 con un solo knob e imagen */}
       <div className="w-1/3 flex items-center justify-center">
-        <div
-          className="w-24 h-24 bg-cover bg-center rounded-full flex items-center justify-center border-4 border-gray-500 shadow-lg"
-          style={{ backgroundImage: "url('/path-to-your-image.png')" }}
-        >
-          <Knob
-            value={knobs.k5}
-            onChange={(e) => setKnobs({ ...knobs, k5: e.value })}
-            min={-12}
-            max={0}
-          />
-        </div>
+      <div
+            className="w-24 h-24 bg-cover bg-center rounded-full flex items-center justify-center border-4 border-gray-500 shadow-lg"
+            style={{ backgroundImage: `url(${imagePath})` }}
+          >
+            <Knob
+              value={knobs.k5}
+              onChange={(e) => setKnobs({ ...knobs, k5: e.value })}
+              min={-12}
+              max={0}
+              className="knob-hidden"
+            />
+          </div>
+
       </div>
     </div>
   );
