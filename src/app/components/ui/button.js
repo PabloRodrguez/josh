@@ -10,7 +10,7 @@ export default function Button({ className, onClick, children }) {
         height: "50px",
         boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
       }}
-    >
+    >s
       <div
         className="w-6 h-6 rounded-full bg-gray-700 border-2 border-gray-500 shadow-inner"
         style={{
